@@ -4,17 +4,22 @@ import { useAuth  } from "@/hooks";
 import {authApi  } from "@/api-client";
 import { loginPayload } from "@/models";
 import { useRouter  } from "next/router";
+import { getErrorMessage } from "@/utils/get-error-message";
+import { toast } from "react-toastify";
 
 function LoginPage() {
-    const {profile ,  login , logout } = useAuth({});
+    const { login } = useAuth({
+        revalidateOnMount: false,
+    });
     const router =  useRouter ();
 
      const handleLoginSubmit = async (payload : loginPayload)  => { 
         try {
            await login(payload);
            router.push('/');
-        } catch (error) {
-            console.log(error);
+        } catch (error:unknown) {
+            const message = getErrorMessage(error);
+            toast.error(message); 
         }
     }
     return ( 

@@ -16,5 +16,5 @@ export const ROUTER_MENU = [
 export type TypeMenu = {
     label : string,
     path : string,
-    requiresLogin : boolean
+    requiresLogin?: boolean
 }

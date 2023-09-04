@@ -17,7 +17,7 @@ function FeaturedWorks() {
         thumbnailUrl : 'https://res.cloudinary.com/diifnrxw3/image/upload/v1686663887/protfolio-ui/Rectangle_30_m4jhza.png',
       },
       {
-        id : 1,
+        id : 2,
         title : 'Vibrant Portraits of 2020',
         fullDescription : '',
         shortDescription : 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
@@ -28,7 +28,7 @@ function FeaturedWorks() {
 
       },
       {
-        id : 1,
+        id : 3,
         title : '36 Days of Malayalam type',
         fullDescription : '',
         shortDescription : 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
